@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="../CSS/bootstrap-datetimepicker.min.css" rel="stylesheet"
+	media="screen">
+<script type="text/javascript" src="../JS/jquery-1.8.3.min.js"
+	charset="UTF-8"></script>
+<script type="text/javascript" src="../JS/bootstrap.js"></script>
+<script type="text/javascript" src="../JS/bootstrap-datetimepicker.js"
+	charset="UTF-8"></script>
+<script type="text/javascript"
+	src="../JS/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<title>数据模拟</title>
+</head>
+<body>
+	<div class="container">
+		<h3 class="h3">设置模拟数据</h3>
+		<br> //时间选择器
+		<form action="" class="form-horizontal" role="form">
+			<fieldset>
+				<div class="form-group">
+					<label for="dtp_input1" class="col-md-2 control-label">选择时间</label>
+					<div class="input-group date form_datetime col-md-5"
+						data-date="1979-09-16T05:25:07Z"
+						data-date-format="dd MM yyyy - HH:ii p"
+						data-link-field="dtp_input1">
+						<input class="form-control" size="16" type="text" value=""
+							readonly> <span class="input-group-addon"><span
+							class="glyphicon glyphicon-remove"></span></span> <span
+							class="input-group-addon"><span
+							class="glyphicon glyphicon-th"></span></span>
+					</div>
+					<input type="hidden" id="dtp_input1" value="" /><br />
+				</div>
+			</fieldset>
+		</form>
+		<table class="table table-bordered table-striped">
+			<tr class="active">
+				<td class="info">序号</td>
+				<td class="active">选择区域</td>
+				<td class="success">选择人数</td>
+				<td class="warning">设置归属地比例(地区1：地区2：地区3：地区4)</td>
+			</tr>
+			<tr>
+				<td class="info">1</td>
+				<td class="active">区域一</td>
+				<td class="success">
+					<div class="form-group">
+						<input type="text" class="form-control" id="num_1">
+					</div>
+				</td>
+				<td class="warning">
+					<div>
+						<div class="row">
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_1_1">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_1_2">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_1_3">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_1_4">
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="info">2</td>
+				<td class="active">区域二</td>
+				<td class="success">
+					<div class="form-group">
+						<input type="text" class="form-control" id="num_2">
+					</div>
+				</td>
+				<td class="warning">
+					<div>
+						<div class="row">
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_2_1">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_2_2">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_2_3">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_2_4">
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="info">3</td>
+				<td class="active">区域3</td>
+				<td class="success">
+					<div class="form-group">
+						<input type="text" class="form-control" id="num_3">
+					</div>
+				</td>
+				<td class="warning">
+					<div>
+						<div class="row">
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_3_1">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_3_2">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_3_3">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_3_4">
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="info">4</td>
+				<td class="active">区域4</td>
+				<td class="success">
+					<div class="form-group">
+						<input type="text" class="form-control" id="num_4">
+					</div>
+				</td>
+				<td class="warning">
+					<div>
+						<div class="row">
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_4_1">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_4_2">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_4_3">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_4_4">
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="info">5</td>
+				<td class="active">区域5</td>
+				<td class="success">
+					<div class="form-group">
+						<input type="text" class="form-control" id="num_5">
+					</div>
+				</td>
+				<td class="warning">
+					<div>
+						<div class="row">
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_5_1">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_5_2">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_5_3">
+							</div>
+							<div class="col-xs-1">
+								<input type="text" class="form-control" id="pro_5_4">
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div class="btn-group">
+			<button type="submit" class="btn btn-success btn-lg"
+				onclick="setAction()">Submit</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+</script>
+	<script type="text/javascript">
+
+    //存放时间数量的数组
+    var num = new Array();
+    var propotion = new Array();
+    var time;
+    //入口函数
+    function setAction(){
+        getnum();
+        getproportion();
+        gettime();
+        createForm();
+    }
+
+    //获取每个区域的人数
+    function getnum(){
+        num[0] = document.getElementById("num_1").value;
+        num[1] = document.getElementById("num_2").value;
+        num[2] = document.getElementById("num_3").value;
+        num[3] = document.getElementById("num_4").value;
+        num[4] = document.getElementById("num_5").value;
+    }
+    //获取每个区域归属地的比例
+    function getproportion(){
+
+        propotion[0] = document.getElementById("pro_1_1").value+"/"
+                +document.getElementById("pro_1_2").value+"/"
+                +document.getElementById("pro_1_3").value+"/"
+                +document.getElementById("pro_1_4").value;
+        propotion[1] = document.getElementById("pro_2_1").value+"/"
+                +document.getElementById("pro_2_2").value+"/"
+                +document.getElementById("pro_2_3").value+"/"
+                +document.getElementById("pro_2_4").value;
+        propotion[2] = document.getElementById("pro_3_1").value+"/"
+                +document.getElementById("pro_3_2").value+"/"
+                +document.getElementById("pro_3_3").value+"/"
+                +document.getElementById("pro_3_4").value;
+        propotion[3] = document.getElementById("pro_4_1").value+"/"
+                +document.getElementById("pro_4_2").value+"/"
+                +document.getElementById("pro_4_3").value+"/"
+                +document.getElementById("pro_4_4").value;
+        propotion[4] = document.getElementById("pro_5_1").value+"/"
+                +document.getElementById("pro_5_2").value+"/"
+                +document.getElementById("pro_5_3").value+"/"
+                +document.getElementById("pro_5_4").value;
+    }
+    //获取时间
+    function gettime(){
+        time = document.getElementById("dtp_input1").value;
+    }
+    //创建表单
+    function createForm(){
+        var myForm = document.createElement("form");
+        document.body.appendChild(myForm);
+        myForm.method = "get";
+        myForm.action = "datasimulate";
+        alert("3:"+myForm.action);
+        //添加input
+        createInput(myForm,"num",num);
+        createInput(myForm,"propotion",propotion);
+        createInput(myForm,"time",time);
+        alert(myForm.action);
+        alert(num);
+         alert(propotion);
+         alert(time);
+        
+        myForm.submit();
+    }
+    //创建input
+    function createInput(myform,name,value)
+    {
+        var tmpInput = document.createElement("input");
+        tmpInput.type = "text";
+        tmpInput.value = value;
+        tmpInput.name = name;
+        myform.appendChild(tmpInput);
+    }
+
+
+
+</script>
+
+</body>
+</html>
