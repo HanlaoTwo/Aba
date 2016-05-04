@@ -33,7 +33,6 @@
          var submit = document.getElementById("ser_ok");
          ser_type.value = chose;
          submit.submit();
-         alert("-----------");
     }
 </script>
 

@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css" />
 
     <title>服务消息</title>
 </head>

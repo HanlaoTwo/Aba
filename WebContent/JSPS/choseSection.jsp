@@ -5,7 +5,7 @@
 <html lang="zh-CN">
 <HEAD>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css" />
 <TITLE>选择区域</TITLE>
 </HEAD>
 <BODY>
@@ -18,7 +18,6 @@
 				var i = document.getElementById("id");
 				i.value = s1.value;
 				sectionAction.action = action0;
-				alert(sectionAction.action);
 				sectionAction.submit();
 				sectionAction.submit();
 			}
@@ -28,7 +27,6 @@
 				var i = document.getElementById("id");
 				i.value = "now";
 				sectionAction.action = action0;
-				alert(sectionAction.action);
 				sectionAction.submit();
 			}
 			function setparm2() {
@@ -37,7 +35,6 @@
 				sectionAction.action = action0;
 				var i = document.getElementById("id");
 				i.value = "all";
-				alert(sectionAction.action);
 				sectionAction.submit();
 			}
 			function setSection0() {

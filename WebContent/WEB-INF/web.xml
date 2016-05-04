@@ -6,7 +6,7 @@
 	<display-name>Aba</display-name>
 	
 	<welcome-file-list>
-       <welcome-file>/JSPHQ/dataSimulater.html</welcome-file>
+       <welcome-file>/JSPS/dataSimulater.html</welcome-file>
     </welcome-file-list>
 
 	<!-- 配置 Spring IOC 容器 -->
