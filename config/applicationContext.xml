@@ -48,14 +48,7 @@
 			</props>
 		</property>
 		
-				<!-- 指定HIbernate映射文件的路径 -->
-		<property name="mappingResources">
-			<list>
-				<value>model/Message.hbm.xml</value>	
-		    	
-			</list>			
-
-		</property>
+		
 	</bean>
 
 	<!-- 配置Hibernate 的事务管理器 -->
