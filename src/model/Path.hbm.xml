@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-4 22:34:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Path" table="PATH">
+        <id name="pathID" type="int">
+            <column name="PATHID" />
+            <generator class="assigned" />
+        </id>
+        <property name="orgin" type="int">
+            <column name="ORGIN" />
+        </property>
+        <property name="destination" type="int">
+            <column name="DESTINATION" />
+        </property>
+        <list name="though" inverse="false" table="PLACE" lazy="true">
+            <key>
+                <column name="PATHID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="model.Place" />
+        </list>
+    </class>
+</hibernate-mapping>

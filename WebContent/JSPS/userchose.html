@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css" />
+    <title>选择地区和类别</title>
+</head>
+<body>
+<div class="container">
+    <script type="text/javascript">
+            function getparm(){
+            var s1 = document.getElementById("select");
+            document.getElementById("section").value = s1.value;
+            document.getElementById("userchose").submit();
+        }
+
+    </script>
+    <h1 class="h1">选择地区</h1>
+    <Form action = "information.do" method="post" id="userchose">
+        <input name="section" id="section" type="hidden">
+        
+    </Form>
+
+    <br><br>
+    <select name="s1" id ="select">
+        <option value="1" selected="selected">>全区</option>
+        <option value="2">九寨沟</option>
+        <option value="3">黄龙</option>
+        <option value="4">小金县</option>
+        <option value="5">红原</option>
+        <option value="6">松潘</option>
+    </select>
+
+        <button type="button" class="btn btn-default"  onclick="getparm()">Submit</button>
+</div>
+</body>
+</html>

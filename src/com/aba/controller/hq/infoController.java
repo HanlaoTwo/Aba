@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.aba.datasource.Simulater;
+import com.aba.msgpush.PtpMnager;
 
 import dao.Messagedao;
 import dao.sectiondao;
@@ -36,7 +37,7 @@ public class infoController {
 		Messagedao md = new Messagedao();
 		Message m = md.getMessageByID(section).get(0);
 		map.addAttribute("section",section);
-		map.addAttribute("info", "����");
+		map.addAttribute("info", "暂无");
 		map.addAttribute("message", sd.getSection(section).getMsg());
 		map.addAttribute("description", sd.getSection(section).getDescription());
 		map.addAttribute("weather", m.getWeather());
@@ -50,9 +51,11 @@ public class infoController {
 			                 @RequestParam String emergency,
 			                 @RequestParam int sectionid)
 	{
-		System.out.println("controller>>>>>>>>>>>>>>>>"+emergency);
 		Messagedao md = new Messagedao();
 		Date time_data = new Date();
+		//更新数据并向用户推送
+		PtpMnager.getManager().BroadcatMsg("景区位置："+sectionid+";   天气："+weather+
+				";   商业消息："+tration+";   应景消息："+emergency);
 		md.saveMessage(weather, time_data, tration, emergency, sectionid);
 		
 		return "/setmsg";

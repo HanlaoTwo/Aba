@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-4 22:34:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Place" table="PLACE">
+        <id name="placeID" type="int">
+            <column name="PLACEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="maxTourist" type="int">
+            <column name="MAXTOURIST" />
+        </property>
+        <property name="currentTourist" type="int">
+            <column name="CURRENTTOURIST" />
+        </property>
+        <property name="time" type="java.util.Date">
+            <column name="TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

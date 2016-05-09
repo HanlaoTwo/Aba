@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-4 22:34:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Tourist" table="TOURIST">
+        <id name="touristID" type="int">
+            <column name="TOURISTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="phoneNum" type="java.lang.String">
+            <column name="PHONENUM" />
+        </property>
+        <property name="source" type="java.lang.String">
+            <column name="SOURCE" />
+        </property>
+        <property name="placeName" type="java.lang.String">
+            <column name="PLACENAME" />
+        </property>
+        <property name="time" type="java.util.Date">
+            <column name="TIME" />
+        </property>
+        <many-to-one name="path" class="model.Path" fetch="join">
+            <column name="PATH" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
